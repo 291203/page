@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFFFFF;
+            width: 1366px;
+            text-align: center;
+            margin: 0 auto;
+            font-family: 'Lato', sans-serif;
+        }
+        h3 {
+            font-family: 'Lato', sans-serif;
+            color: #262D33;
+            padding-top: 30px;
+            text-align: left;
+            padding-left: 0;
+            font-size: 24px;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 203px;
+            padding-top: 60px; 
+        }
+        .ferst_obzac {
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: left;
+            width: 524px;
+            height: 90px;
+            margin: 0;
+            padding: 0;
+        }
+        .ferst_letter {
+            font-family: 'Lato', sans-serif;
+            font-size: 100px;
+            width: 96px;
+            height: 75px;
+            color: #4592FF;
+            line-height: 75px;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-top: 7px;
+        }
+        .second_obzac {
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: left;
+            width: 623px;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+        .obzac_3, .obzac_4, .obzac_5 {
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: left;
+            width: 623px;
+            height: auto;
+            margin: 0;
+            padding-top: 15px;
+        }
+        main {
+            text-align: left;
+        }
+        .fp {
+            width: 1366px;
+            height: 590px;
+            display: block;
+            margin: 0 auto;
+        }
+        .sp{
+            width: 100%;
+            height: 555px;
+            display: block;
+            margin: 0 auto;
+             
+        }
+        .content {
+            width: 1140px;
+            height: 625px;
+            border: 1px solid #ccc;
+            padding: 0px;
+            margin-left: 113px;
+            margin-top: 45px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .content-inner {
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .left-content {
+            width: 877px;
+            padding-right: 20px;
+            border-right: 1px solid #ccc;
+        }
+        .right-content {
+            width: 262px;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .title {
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            padding-left: 35px;
+            padding-top: 15px;
+        }
+        .name {
+            font-family: 'Lato', sans-serif;
+            font-size: 14px;
+            margin-bottom: 0px;
+        }
+        .profession {
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            color: #666;
+        }
+        .content img {
+            margin-bottom: -5px;
+        }
+        .content .title {
+            margin-top: 0px;
+        }
+        .avatar-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .avatar-container img {
+            margin-right: 10px;
+        }
+        .overlay-image-left {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            padding-top: 248px;
+            padding-left: 35px; 
+        }
+        .overlay-image-right {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            padding-top: 248px;
+            padding-left: 1045px; 
+        }
+        .uppajes{
+            width: 1366px;
+            height: 590px;
+            border: 1px solid #ccc;
+            padding: 0px;
+            margin-left: 0px;
+            margin-top: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .arrowtop{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            padding-top: 60px;
+            padding-left: 1136px;
+        }
+        .arrowtop1{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            padding-top: 60px;
+            padding-left: 1026px;
+        }
+        .bookmark{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            padding-top: 150px;
+            padding-left: 113px;
+            opacity: 40%;
+        }
+        .clock{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            padding-top: 503px;
+            padding-left: 210px;
+            opacity: 40%;
+        }
+        .comment{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            padding-top: 503px;
+            padding-left: 399px;
+            opacity: 40%;
+        }
+        .heart{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            padding-top: 503px;
+            padding-left: 338px;
+            opacity: 40%;
+        }
+        .home{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            padding-top: 60px;
+            padding-left: 889px;
+        }
+        .dest{
+            position: absolute;
+            width: 263px;
+            height: 15px;
+            padding-top: 63px;
+            padding-left: 210px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Lato;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.5px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #4592FF;
+        }
+        .bigtext{
+            position: absolute;
+            width: 750px;
+            height: 210px;
+            padding-top: 130px;
+            padding-left: 210px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Roboto Slab;
+            font-size: 55px;
+            line-height: 70px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFF;
+        }
+        .undertext{
+            position: absolute;
+            width: 556px;
+            height: 60px;
+            padding-top: 370px;
+            padding-left: 210px;
+            gap: 0px;
+            opacity: 0.85px;
+            font-family: Lato;
+            font-size: 18px;
+            line-height: 30px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFF;
+        }
+        .texthome{
+            position: absolute;
+            width: 82px;
+            height: 20px;
+            padding-top: 60px;
+            padding-left: 914px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFF;
+        }
+        .leftarrowtext{
+            position: absolute;
+            width: 29px;
+            height: 20px;
+            padding-top: 60px;
+            padding-left: 1051px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFF;
+        }
+        .rightarrowtext{
+            position: absolute;
+            width: 31px;
+            height: 20px;
+            padding-top: 60px;
+            padding-left: 1100px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: right;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFF;
+        }
+        .twli{
+            position: absolute;
+            width: 143px;
+            height: 40px;
+            padding-top: 490px;
+            padding-left: 463px;
+            gap: 0px;
+            opacity: 0px;
+        }
+        .clocktext{
+            position: absolute;
+            width: 88px;
+            height: 15px;
+            padding-top: 503px;
+            padding-left: 230px;
+            gap: 0px;
+            opacity: 0.85px;
+            font-family: Lato;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFF;
+        }
+        .hearttext{
+            position: absolute;
+            width: 21px;
+            height: 15px;
+            padding-top: 503px;
+            padding-left: 358px;
+            gap: 0px;
+            opacity: 0.85px;
+            font-family: Lato;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFF;
+        }
+        .commenttext{
+            position: absolute;
+            width: 14px;
+            height: 15px;
+            padding-top: 503px;
+            padding-left: 419px;
+            gap: 0px;
+            opacity: 0.85px;
+            font-family: Lato;
+            font-size: 12px;
+            line-height: 15px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FFFFFF;
+        }
+        .miniblock{
+            position: fixed;
+            width: 264px;
+            height: 370px;
+            top: 390px;
+            left: 924px;
+            border-radius: 10px;
+            gap: 0px;
+            opacity: 0px;
+            background: #FFFFFF;
+            border: 1px solid #D9DADB
+        }
+        .avatar1{
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            padding-top: 35px;
+            padding-left: 87px;
+            gap: 0px;
+            opacity: 0px;
+        }
+        .women{
+            position: absolute;
+            width: 213px;
+            height: 25px;
+            padding-top: 140px;
+            padding-left: 25px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Roboto Slab;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #262D33;
+        }
+        .whoiswomen{
+            position: absolute;
+            width: 213px;
+            height: 20px;
+            padding-top: 170px;
+            padding-left: 25px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #4B5157;
+        }
+        .articles{
+            position: absolute;
+            width: 213px;
+            height: 20px;
+            padding-top: 205px;
+            padding-left: 25px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #262D33;
+        }
+        .facebook{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            padding-top: 250px;
+            padding-left: 61px;
+            gap: 0px;
+            opacity: 0px;
+        }
+        .twitter{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            padding-top: 250px;
+            padding-left: 111px;
+            gap: 0px;
+            opacity: 0px;
+        }
+        .instogramm{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            padding-top: 250px;
+            padding-left: 161px;
+            gap: 0px;
+            opacity: 0px;
+        }
+        .underlinetext{
+            position: absolute;
+            width: 213px;
+            height: 20px;
+            padding-top: 324px;
+            padding-left: 25px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Lato;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        .line{
+            position: absolute;
+            width: 263px;
+            height: 1px;
+            margin-top: 324px;
+            padding-left: 1px;
+            gap: 0px;
+            opacity: 0px;
+            background:  #D9DADB;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="uppajes">
+            <img class="fp" src="Image.jpg" alt="Описание изображения" >
+            <div class="dest">DESTINATIONS</div>
+            <b class="bigtext">Five Travel Stories From 2017 to Help You Escape Into the World</b>
+            <div class="undertext">From the coastlines of Europe to remote Kodiak Island, Alaska, here are five of our favorite stories to help you explore the world</div>
+            <b class="texthome">Back to main</b>
+            <b class="leftarrowtext">Prev</b>
+            <b class="rightarrowtext">Next</b>
+            <div class="clocktext">Aug 6, 10:23 pm</div>
+            <div class="hearttext">830</div>
+            <div class="commenttext">19</div>
+            <img class="arrowtop" src="Arrowtop.png" alt="">
+            <img class="arrowtop1" src="Arrowtop1.png" alt="">
+            <img class="bookmark" src="Bookmark.png" alt="">
+            <img class="clock" src="Clock.png" alt="">
+            <img class="comment" src="Comment.png" alt="">
+            <img class="heart" src="Heart.png" alt="">
+            <img class="home" src="Home.png" alt="">
+            <img class="twli" src="Text with left icon.png" alt="">
+        </div>
+        <div class="miniblock">
+            <img class="avatar1" src="Avatar1.png" alt="Описание изображения" >
+            <b class="women">Mira Anderson</b>
+            <div class="whoiswomen">Traveler & Photographer</div>
+            <b class="articles">82 articles</b>
+            <img class="facebook" src="Round with icon.svg" alt="Описание изображения" >
+            <img class="twitter" src="Round with icon1.svg" alt="Описание изображения" >
+            <img class="instogramm" src="Round with icon2.svg" alt="Описание изображения" >
+            <div class="line"></div>
+            <p class="underlinetext">Follow on Universal</p>
+        </div>
+        <div class="container">
+            <div style="display: flex; align-items: flex-start; margin-bottom: 0; height: 90px;">
+                <p class="ferst_letter">M</p>
+                <p class="ferst_obzac">
+                    many geographers are trained in toponymy and cartology, this is not their main preoccupation. Geographers study the space and the temporal database distribution of phenomena,
+                </p>
+            </div>
+            <p class="second_obzac">
+                processes, and features as well as the interaction of humans and their environment. Because space and place affect a variety of topics, such as economics, health, climate, plants and animals, geography is highly interdisciplinary. The interdisciplinary nature of the geographical approach depends on an attentiveness to the relationship between physical and human phenomena and its spatial patterns.
+            </p>
+            <h3>Integrated Geography</h3>
+            <p class="obzac_3">
+                Geography as a discipline can be split broadly into two main subsidiary fields: human geography and physical geography. The former largely focuses on the built environment and how humans create, view, manage, and influence space. The latter examines the natural environment, and how organisms, climate, soil, water, and landforms produce and interact.
+            </p>
+            <p class="obzac_4">
+                The difference between these approaches led to a third field, environmental geography, which combines physical and human geography and concerns the interactions between the environment and humans.
+            </p>
+            <p class="obzac_5">
+                The accompanying text mentions seven outer regions beyond the encircling ocean. The descriptions of five of them have survived. In contrast to the Imago Mundi, an earlier Babylonian world map dating back to the 9th century BC depicted Babylon as being further north from the center of the world, though it is not certain what that center was supposed to represent.
+            </p>
+        </div>
+        <div class="content">
+            <img class="sp" src="Image2.svg" alt="Описание изображения">
+            <img class="overlay-image-left" src="Arrow.png" alt="Left arrow">
+            <img class="overlay-image-right" src="Arrow1.png" alt="Right arrow">
+            <div class="content-inner">
+                <div class="left-content">
+                    <div class="title">Constatistics deal with quantitative data analysis, specifically the application of statistical methodology</div>
+                </div>
+                <div class="right-content">
+                    <div class="avatar-container">
+                        <img src="Avatar.svg" alt="Аватар">
+                        <div>
+                            <div class="name">Andrew Washington</div>
+                            <div class="profession">Photographer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
